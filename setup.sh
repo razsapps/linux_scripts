@@ -46,3 +46,15 @@ echo
 echo INSTALLING WIFI DRIVER - MACBOOK PRO
 echo 
 apt-get install bcmwl-kernel-source
+
+
+echo 
+echo ADDING REPOSITORIES
+echo 
+add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) main universe restricted multiverse"
+apt-get update
+
+echo 
+echo INSTALLING MAVEN
+echo 
+apt-get install maven
